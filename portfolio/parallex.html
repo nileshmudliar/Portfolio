@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Moon parallex effects</title>
+<link rel="stylesheet" type="text/css" href="moon.css">
+</head>
+<body>
+<section>
+<img src="bg.jpg" id="bg">
+<img src="moon.png" id="moon">
+<img src="mountain.png" id="mountain">
+<img src="road.png" id="road">
+<h2 id="text">ABOUT ME</h2>
+</section>
+<h1> I am "NILESH MUDLIAR</h1> 
+<p> 
+    This is my portfolio website. I am from Bhilai, Chhattisgarh.
+    Coming to my educational background, I had done B.E. in stream of Computer Science from "BHILAI INSTITUTE OF TECHNOLOGY, DURG"
+	Other than education I am also a sports person. I had played National Game in Bodybuilding and Power Lifting also , I have played state in  Chess.
+</p>
+<p> 
+    I am a self motivated person and able to handle stress. Apart from my academics ,being graduatd from one of the most prominent college of Chhattisgarh gave
+    me exposure to work and learn with people of different intellect and background. Which helps me to learn and think from different perspective.
+	Also I can work with team and as an individual too. And I always try to exceed my seniors expectation.
+</p>
+	
+<img src="myimg.jpg" height="500" width="500">
+	
+	
+<script type="text/javascript">
+let bg = document.getElementById("bg");
+let moon = document.getElementById("moon");
+let mountain = document.getElementById("mountain");
+let road = document.getElementById("road");
+let text = document.getElementById("text");
+
+window.addEventListener('scroll', function(){
+var value = window.scrollY;
+
+bg.style.top = value * 0.5 + 'px';
+moon.style.left = -value * 0.5 + 'px';
+mountain.style.top = -value * 0.15 + 'px';
+road.style.top = value * 0.15 + 'px';
+text.style.top = value * 1 + 'px';
+})
+
+</script>
+
+
+</body>
+</html>
